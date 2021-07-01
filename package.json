@@ -1,6 +1,6 @@
 {
-  "name": "@tran-simon/ts-object-path",
-  "version": "0.4.0",
+  "name": "@magosys/ts-object-path",
+  "version": "0.1.0",
   "description": "",
   "keywords": [],
   "main": "dist/ts-object-path.umd.js",
@@ -12,7 +12,7 @@
   "author": "Taras Tymchii",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tran-simon/ts-object-path.git"
+    "url": "https://github.com/magosys/ts-object-path.git"
   },
   "license": "MIT",
   "engines": {
