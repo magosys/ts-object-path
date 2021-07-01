@@ -1,6 +1,8 @@
-# Fork of [ts-object-path](https://github.com/Taras-Tymchiy/ts-object-path) 
+# Fork of [tran-simon/ts-object-path](https://github.com/tran-simon/ts-object-path) 
 
 Adds the '_path' and '_name' property to every ObjPathProxy objects.
+
+Adds support to IE6+ using es6-proxy-polyfill package
 
 
 ```typescript

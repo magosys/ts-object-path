@@ -1,5 +1,5 @@
 import { createProxy, get, set } from "../src/ts-object-path"
-import {} from 'jest';
+import 'jest';
 
 interface ITest {
   one: number;

@@ -65,5 +65,8 @@
     "tslint-config-prettier": "^1.1.0",
     "tslint-config-standard": "^7.0.0",
     "typescript": "^2.8"
+  },
+  "dependencies": {
+    "es6-proxy-polyfill": "^2.1.1"
   }
 }

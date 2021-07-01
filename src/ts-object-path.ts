@@ -3,15 +3,18 @@ export * from './obj-path-proxy'
 
 const pathSymbol = Symbol('Object path')
 
+const ProxyPolyfill = require('es6-proxy-polyfill');
+
+
 type RecursiveRequired<T> = {
   [P in keyof T]-?: RecursiveRequired<T[P]>;
 };
 
 export function createProxy<T>(path: PropertyKey[] = []): ObjPathProxy<RecursiveRequired<T>> {
-  const proxy = new Proxy(
+  const proxy = new ProxyPolyfill(
     { [pathSymbol]: path },
     {
-      get(target, key) {
+      get(target: any, key: PropertyKey) {
         if (key === pathSymbol) {
           return target[pathSymbol]
         }
